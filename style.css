@@ -1,0 +1,44 @@
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  /* Uncomment the below line and the max-width line down under myTable td to disable horizontal scrolling */
+  /*width: 100%; */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  /*width: 100%; comment here Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+/* Seperated out td tags so we can limit text length in the table and leave ... if something is too long */
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+  height:12px; /* May need to adjust this if font size is changed */
+  /* Uncomment the below line along with the one near the top of this file to disable horizontal scrolling */
+  /*max-width: 40px; */
+  text-overflow: ellipsis; /* Leaves the ... */
+  overflow: hidden; 
+  white-space: nowrap;
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
