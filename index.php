@@ -13,7 +13,7 @@
 
 <?php
 // Connect to your Microsoft SQL Server
-$conn = mssql_connect("IP","USE","PASSWORD");
+$conn = mssql_connect("IP","USER","PASSWORD");
 // Select the table and DB
 $sql = "SELECT * FROM [TABLE_NAME].[dbo].[DATABASE_NAME]";
 $result = mssql_query($sql);
